@@ -1,0 +1,32 @@
+{
+  "name": "lineman-bower",
+  "title": "A Bower plugin for Lineman",
+  "version": "0.0.1",
+  "homepage": "https://github.com/testdouble/lineman-bower",
+  "author": {
+    "name": "Justin Searls",
+    "company": "Test Double"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/testdouble/lineman-bower.git"
+  },
+  "main": "main.js",
+  "dependencies": {
+    "grunt-bower-task": "~0.3.4",
+    "coffee-script": "~1.6.3",
+    "grunt": "~0.4.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "lineman": ">= 0.19.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://mit-license.org"
+    }
+  ]
+}
