@@ -13,4 +13,4 @@ module.exports = (lineman) ->
       install:
         options:
           targetDir: "vendor/bower"
-          cleanBowerDir: true
+          cleanTargetDir: true
