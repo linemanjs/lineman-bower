@@ -11,7 +11,7 @@ First, add the plugin to your lineman project:
 $ npm install lineman-bower --save-dev
 ```
 
-Second, create `.bowerrc` and set the bower vendor directory:
+When you install lineman-bower, it should create a default `.bowerrc` (unless one already exists) with the following vendor directory:
 
 ```
 {
