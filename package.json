@@ -14,7 +14,6 @@
     "type": "git",
     "url": "git://github.com/linemanjs/lineman-bower.git"
   },
-  "main": "main.js",
   "dependencies": {
     "grunt-bower-task": "~0.3.4",
     "coffee-script": "~1.6.3",
