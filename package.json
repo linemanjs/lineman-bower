@@ -1,18 +1,21 @@
 {
   "name": "lineman-bower",
-  "title": "A Bower plugin for Lineman",
+  "description": "A Bower plugin for Lineman",
   "version": "0.0.3",
   "homepage": "https://github.com/linemanjs/lineman-bower",
   "author": {
     "name": "Justin Searls",
-    "company": "Test Double"
-  },
-  "scripts": {
-    "postinstall": "node script/postinstall.js"
+    "email": "justin@testdouble.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/linemanjs/lineman-bower.git"
+    "url": "https://github.com/linemanjs/lineman-bower.git"
+  },
+  "bugs": {
+    "url": "https://github.com/linemanjs/lineman-bower/issues"
+  },
+  "scripts": {
+    "postinstall": "node script/postinstall.js"
   },
   "dependencies": {
     "grunt-bower-task": "~0.3.4",
@@ -28,7 +31,13 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://mit-license.org"
+      "url": "http://testdouble.mit-license.org"
     }
+  ],
+  "keywords": [
+    "lineman",
+    "linemanplugin",
+    "bower",
+    "package"
   ]
 }
