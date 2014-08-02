@@ -18,7 +18,7 @@
     "postinstall": "node script/postinstall.js"
   },
   "dependencies": {
-    "grunt-bower-task": "~0.3.4",
+    "grunt-bower-task": "~0.4.0",
     "coffee-script": "~1.6.3",
     "grunt": "~0.4.2"
   },
