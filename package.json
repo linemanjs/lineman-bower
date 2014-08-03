@@ -1,7 +1,7 @@
 {
   "name": "lineman-bower",
   "description": "A Bower plugin for Lineman",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/linemanjs/lineman-bower",
   "author": {
     "name": "Justin Searls",
@@ -17,10 +17,12 @@
   "scripts": {
     "postinstall": "node script/postinstall.js"
   },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
   "dependencies": {
     "grunt-bower-task": "~0.4.0",
     "coffee-script": "~1.6.3",
-    "grunt": "~0.4.2"
   },
   "peerDependencies": {
     "lineman": ">= 0.19.0"
