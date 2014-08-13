@@ -2,22 +2,24 @@ fs = require('fs')
 path = require('path')
 
 module.exports = (lineman) ->
+  app = lineman.config.application
+  
   config:
-    loadNpmTasks: lineman.config.application.loadNpmTasks.concat("grunt-bower-task")
+    loadNpmTasks: app.loadNpmTasks.concat("grunt-bower-task")
 
     prependTasks:
-      common: ["bower"].concat(lineman.config.application.prependTasks.common)
+      common: ["bower"].concat(app.prependTasks.common)
 
     clean:
       bower:
-        src: bowerDirectory(lineman.grunt)
+        src: bowerDirectory()
 
     bower:
       install:
         options:
           copy: false
 
-bowerDirectory = (grunt) ->
+bowerDirectory = () ->
   bowerrc = path.join(process.cwd(), ".bowerrc")
-  bowerConfig = grunt.file.readJSON(bowerrc) unless !fs.existsSync(bowerrc)
-  bowerConfig?.directory || "vendor/bower"
+  bowerConfig = JSON.parse(fs.readFileSync(bowerrc, "utf8")) unless !fs.existsSync(bowerrc)
+  bowerConfig?.directory || "bower_components"
