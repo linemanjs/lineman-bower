@@ -22,13 +22,14 @@
   },
   "dependencies": {
     "grunt-bower-task": "~0.4.0",
-    "coffee-script": "~1.6.3"
+    "coffee-script": "~1.6.3",
+    "find-root-package": "0.0.1"
   },
   "peerDependencies": {
-    "lineman": ">= 0.19.0"
+    "grunt": "~0.4.1",
+    "lineman": ">= 0.27.0"
   },
   "devDependencies": {
-    "grunt": "^0.4.4",
     "grunt-release": "^0.7.0"
   },
   "licenses": [
