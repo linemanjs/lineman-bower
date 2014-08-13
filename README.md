@@ -11,7 +11,8 @@ First, add the plugin to your lineman project:
 $ npm install lineman-bower --save-dev
 ```
 
-When you install lineman-bower, it should create a default `.bowerrc` (unless one already exists) with the following vendor directory:
+When you install lineman-bower, it should create a default `.bowerrc` (unless one already exists) with the following
+vendor directory. Feel free to customize this directory to a different location if you like.
 
 ```
 {
@@ -26,7 +27,8 @@ into git, so add them to your `.gitignore`:
 /vendor/bower
 ```
 
-Next, you'll need a `bower.json` to start pulling down dependencies:
+Next, you'll need a `bower.json` to start pulling down dependencies. This can be completed by executing `bower init`
+from the command prompt:
 
 ```
 {
